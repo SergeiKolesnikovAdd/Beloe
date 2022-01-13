@@ -1,0 +1,128 @@
+@import './general-particles/header';
+@import './general-particles/main-container';
+
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:flex-start;
+}
+
+.text {
+  
+    &_type {
+      &_h1 {
+        font-family: Akrobat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 90%;
+        text-transform: uppercase;
+      }
+
+      &_h2com {
+        font-family: Akrobat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 100%;
+        text-transform: uppercase;
+      }
+  
+      &_h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+      }
+   
+      &_h3 {
+        font-family: Akrobat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: uppercase;
+      }
+  
+      &_h4 {
+        font-family: TT Interfaces;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 140%;
+      }
+      &_h5 {
+        font-family: TT Interfaces;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16.8px;
+        text-transform: unset;
+      }
+    }
+  
+    &_color {
+      &_black {
+        color: $black
+      }
+      &_white {
+        color: $white;
+      }
+      &_snow-white {
+        color: $snow-white;
+      }
+      &_green {
+        color: $green;
+      }
+      &_transparent-black {
+        color: $transparent-black;
+      }
+      &_transparent-white {
+        color: $transparent-white;
+      }
+    }
+  }
+
+.logo-link {
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(19, 18, 18, 0.1);
+    cursor: pointer;
+}
+.logo-link:hover {
+    border: 2px solid $green;
+    transition: 0.3s;
+    cursor: pointer;
+    
+
+}
+.link-main-menu {
+  width: 100%;
+
+  &:hover {
+    color:$green;
+    cursor: pointer;
+  }
+}
+
+.route-link{
+  display: block;
+  width: 100%;
+  text-decoration: underline;
+  color: $green;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+

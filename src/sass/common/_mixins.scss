@@ -1,0 +1,16 @@
+@mixin column-flex-for-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin margin-padding-none{
+    margin: 0px;
+    padding: 0px;
+}
+
+@mixin standart-margin-top {
+    margin-top: 20px;
+}
+
