@@ -1,9 +1,10 @@
-@mixin column-flex-for-menu {
+@mixin flex-column-start-start {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 }
+// This mixin used in .nav-block(general.scss)
 
 @mixin margin-padding-none{
     margin: 0px;
@@ -13,4 +14,10 @@
 @mixin standart-margin-top {
     margin-top: 20px;
 }
+
+@mixin margin-top-bottom {
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
 

@@ -16,38 +16,39 @@
 <body>
   <header>
     <div class="nav-block">
-      <div class="menu__logo">
-          <img src="media/logo.svg" alt="Охотничья база Белое"> <!-- Need to do reference to main page --> 
+      <div class="nav-block__logo logo">
+          <a class="link" href="index.html"><img src="media/logo.svg" alt="Охотничья база Белое"></a> 
       </div>
-      <hr class="menu__break-line-high">
-      <div class="menu__types-of-hunting">
-        <a class="link-main-menu" src="">
-        <h3 class="text text_type_h3 text_color_black">все типы охоты</h3></a>
+      <ul class="nav-block_ul-menu">
+        <li class="li-menu"><hr class="nav-block__break-line"></li>
+        <li class="li-menu"><a class="link" src="">
+            <span class="text text_type_h3 text_color_black">все типы охоты</span></a></li>
+        <li class="li-menu"><hr class="nav-block__break-line"></li>
+        <li class="li-menu"><a class="link" src="">
+          <span class="text text_type_h3 text_color_black">о нас</span></a></li>
+        <li class="li-menu"><a class="link" src="">
+          <span class="text text_type_h3 text_color_black">новости</span></a></li>
+        <li class="li-menu"><a class="link" src="">
+          <span class="text text_type_h3 text_color_black">галерея</span></a></li>
+        <li class="li-menu"><a class="link" src="">
+          <span class="text text_type_h3 text_color_black">отзывы</span></a></li>
+        <li class="li-menu"><hr class="nav-block__break-line"></li>
+        <li class="li-menu"><a class="link-main-menu" src="">
+          <span class="text text_type_h3 text_color_black">отзывы</span></a></li>
+      </ul> 
+      <div class="nav-block__language-change">
+        <a class="link_language" src=""><img class="RUS" src="media/logo-russia.svg"></a>
+        <a class="link_language" src=""><img class="RUS" src="media/logo-germany.svg"></a>
       </div>
-      <hr class="menu__break-line-medium">
-      <div class="menu__additional-references">
-          <a class="link-main-menu" src="">
-            <h3 class="text text_type_h3 text_color_black">о нас</h3></a>
-          <a class="link-main-menu" src="">
-            <h3 class="text text_type_h3 text_color_black">новости</h3></a>
-          <a class="link-main-menu" src="">
-            <h3 class="text text_type_h3 text_color_black">галерея</h3></a>
-          <a class="link-main-menu" src="">
-            <h3 class="text text_type_h3 text_color_black">отзывы</h3></a>
+      <div class="nav-block__adress">
+        <p class="text text_type_h5 text_color_transparent-grey">Россия, Курганская область, лес<br>
+          Каминская Дача</p>
+        <a class="route-link" src="">
+          <h5 class="text text_type_h5 text_color_green">Как проехать?</h5></a>
       </div>
-      <hr class="menu_break-line-low">
-      <div class="menu_contacts"><a class="link-main-menu" src="">
-        <h3 class="text text_type_h3 text_color_black">отзывы</h3></a></div>
-      <div class="menu__language-change">
-        <a class="logo-link" src=""><img class="RUS" src="media/logo-russia.svg"></a>
-        <a class="logo-link" src=""><img class="RUS" src="media/logo-germany.svg"></a>
-      </div>
-      <div class="menu_adress">
-        <h5 class="text text_type_h5 text_color_transparent-grey">Россия, Курганская область, лес<br>
-          Каминская Дача</h5>
-          <a class="route-link" src="">
-            <h5 class="text text_type_h5 text_color_green">Как проехать?</h5></a>
-      </div>
+      <button class="nav-block__button button button_color_green button_type_menu">
+        <span class="text text_type_h3 text_color_white">записаться на охоту</span>
+      </button>
   </header>
   <main class="main-container">
       <section class="promo">

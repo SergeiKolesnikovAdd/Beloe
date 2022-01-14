@@ -4,57 +4,32 @@
     position: fixed;
     width: $menu-width-lg;
     height: 100%;
-    @include column-flex-for-menu;
+    @include flex-column-start-start;
 
     &__logo {
         height: 60px;
-        width: 121px;
         @include margin-padding-none;
         transition: 1s;
+        cursor: pointer;
+        align-self: center;
         
-
         &:hover {
             transform: scale(1.2);
-            cursor: pointer;
         }
     }
 
-    &__break-line-high {
+    &_ul-menu {
+        width: 100%;
+    }
+
+    &__break-line {
         background-color: rgba(19, 18, 18, 0.1);
         height: 2px;
         border: none;
-        margin: 20px 0;
         width: 100%;
         display: flex;
         align-items: center;
-    }
-
-    &__types-of-hunting {
-        @include margin-padding-none;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 100%;   
-    }
-
-    &__break-line-medium {
-        background-color: rgba(19, 18, 18, 0.1);
-        height: 2px;
-        border: none;
-        margin: 20px 0;
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-    &__additional-references {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        height: 100px;
-        width: 100%;
+        @include margin-top-bottom;
     }
 
     &__break-line-low {
@@ -95,4 +70,9 @@
         height: 68px;
     }
     
+}
+
+.li-menu {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

@@ -7,12 +7,6 @@ body {
     padding: 0;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items:flex-start;
-}
 
 .text {
   
@@ -49,7 +43,7 @@ header {
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
-        line-height: 16px;
+        line-height: 100%;
         text-transform: uppercase;
       }
   
@@ -100,19 +94,23 @@ header {
     }
   }
 
-.logo-link {
+.link {
+  cursor:pointer;
+
+  &_language {
     margin-right: 20px;
     border-radius: 50%;
     border: 2px solid rgba(19, 18, 18, 0.1);
     cursor: pointer;
-}
-.logo-link:hover {
-    border: 2px solid $green;
-    transition: 0.3s;
-    cursor: pointer;
-    
 
+    &:hover {
+      border: 2px solid $green;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
 }
+
 .link-main-menu {
   width: 100%;
 
@@ -134,5 +132,48 @@ header {
   }
 }
 
+.button {
+  height: 60px;
+  border: 0;
+  margin-top: 12px;
+
+  &_color{
+
+    &_green {
+      background-color: $green;
+    }
+
+    &_white {
+      background-color: $white;
+    }
+  }
+
+  &_type {
+
+    &_menu {
+      width: 280px;
+    }
+  
+    &_promo {
+      width: 440px;
+    }
+  }
+
+  &:hover {
+    background-color: $white;
+    border: 2px solid $green;
+  }
+  &:hover .text {
+    color: $green;
+  }
+
+
+
+  &:visited {
+    background-color: rgba(36,157,106, 0.4);
+  }
+
+
+}
 
 
