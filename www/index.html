@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Охотничья база "Белое"</title>
-  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/src/css/main.css">
   <link
     rel="shortcut icon"
     href="/media/favicon.svg"
@@ -71,11 +71,11 @@
         </div>
         <div class="comment-container">
             <div class="first-comment">
-              <div class="avatar">ih</div>
+              <div class="avatar-container"><span class="avatar_span text text_type_h2com text_color_green">ih</span></div>
               <div class="inner">
                 <ul class="inner_name">
-                  <li>isroil</li>
-                  <li>homidov</li>
+                  <li><span class="text text_type_h2 text_color_white">isroil</span></li>
+                  <li><span class="text text_type_h2 text_color_white">homidov</span></li>
                 </ul>
                 <div class="inner_mark mark">
                   <div class="mark_star"><img class="svg_star" src="./media/star.svg"></div>
@@ -85,15 +85,15 @@
                   <div class="mark_star"><img class="svg_star" src="./media/star.svg"></div>
                 </div> 
                 <div class="inner_message">
-                  <h4 class="text text_type_h4 text_color_transparent-white">Да очень удобно для охотников</h4>
+                  <span class="text text_type_h4 text_color_transparent-white">Да очень удобно для охотников</span>
                 </div>
               </div>
             </div>
             <div class="second-comment">
-              <div class="avatar"><span class="avatar_span text text_type_h2com text_color_green">sh</span></div>
+              <div class="avatar-container"><span class="avatar_span text text_type_h2com text_color_green">sh</span></div>
               <div class="inner">
                 <ul class="inner_name">
-                  <li>sherell</li>
+                  <li><span class="text text_type_h2 text_color_white">sherell</span></li>
                   <li></li>
                 </ul>
                 <div class="inner_mark mark">
@@ -104,17 +104,17 @@
                   <div class="mark_star"><img class="svg_star" src="./media/star.svg"></div>
                 </div> 
                 <div class="inner_message">
-                  <h4 class="text text_type_h4 text_color_transparent-white">Класс! Очень уютная база, можно не только<br>
-                  охотиться и рыбачить, загорать, ходить на лыжах,<br> играть в теннис и т.д.</h4>
+                  <span class="text text_type_h4 text_color_transparent-white">Класс! Очень уютная база, можно не только<br>
+                  охотиться и рыбачить, загорать, ходить на лыжах,<br> играть в теннис и т.д.</span>
                 </div>
               </div>
             </div>
             <div class="third-comment">
-              <div class="avatar"><span class="avatar_span text text_type_h2com text_color_green">ас</span></div>
+              <div class="avatar-container"><span class="avatar_span text text_type_h2com text_color_green">ас</span></div>
               <div class="inner">
                 <ul class="inner_name">
-                  <li>андрей</li>
-                  <li>с.</li>
+                  <li><span class="text text_type_h2 text_color_white">андрей</span></li>
+                  <li><span class="text text_type_h2 text_color_white">с.</span></li>
                 </ul>
                 <div class="inner_mark mark">
                   <div class="mark_star"><img class="svg_star" src="./media/star.svg"></div>
@@ -124,17 +124,17 @@
                   <div class="mark_star"><img class="svg_star" src="./media/star.svg"></div>
                 </div> 
                 <div class="inner_message">
-                  <h4 class="text text_type_h4 text_color_transparent-white">Возможно самая шикарная охотничья база в<br>
-                  Курганской области!!! Очень крутая гостинница с <br> комфортабильнами номерами, просторным...</h4>
+                  <span class="text text_type_h4 text_color_transparent-white">Возможно самая шикарная охотничья база в<br>
+                  Курганской области!!! Очень крутая гостинница с <br> комфортабильнами номерами, просторным...</span>
                 </div>
               </div>
             </div>
             <div class="forth-comment">
-              <div class="avatar"><span class="avatar_span text text_type_h2com text_color_green">ок</span></div>
+              <div class="avatar-container"><span class="avatar_span text text_type_h2com text_color_green">ок</span></div>
               <div class="inner">
                 <ul class="name">
-                  <li>олег</li>
-                  <li>колташов</li>
+                  <li><span class="text text_type_h2 text_color_white">олег</span></li>
+                  <li><span class="text text_type_h2 text_color_white">колташов</span></li>
                 </ul>
                 <div class="inner_mark mark">
                   <div class="mark_star"><img class="svg_star" src="./media/star.svg"></div>
@@ -144,16 +144,36 @@
                   <div class="mark_star"><img class="svg_star" src="./media/star.svg"></div>
                 </div> 
                 <div class="inner_message">
-                  <h4 class="text text_type_h4 text_color_transparent-white">Превосходное место. Соединяет в себе комфорт<br>
-                  добротного отеля и нетронутость первобытной<br> природы </h4>
+                  <span class="text text_type_h4 text_color_transparent-white">Превосходное место. Соединяет в себе комфорт<br>
+                  добротного отеля и нетронутость первобытной<br> природы</span>
                 </div>
               </div>
             </div>
         </div>
       </section>
       <section class="geo-information">
-          <div class="geo-information__text-explaining"></div>
-          <div class="geo-information__map"></div>
+          <div class="text-explaining">
+            <h4 class="text text_type_h1 text_color_green">как до нас доехать?</h4>
+            <div class="route">
+              <div class="Chelyabisk">
+                <span class="text text_type_h4 text_decoration_bold text_color_black">Из г. Челябинск:</span>
+                <p class="text text_type_h4 text_color_transparent-white">трасса на Курган до г.Юргамыш далее г.Куртамыш далее<br>
+                  на с.Каминское до поворота с указателем «Охотничья база<br> Белое».</p>
+              </div>
+              <div class="Kurgan">
+                <span class="text text_type_h4 text_decoration_bold text_color_black">Из г.Курган:</span>
+                <p class="text text_type_h4 text_color_transparent-white">трасса на г.Куртамыш далее на с.Каминское до поворота  с<br>
+                  указателем «Охотничья база Белое».</p>
+              </div>
+              <div class="yandex-map">
+                <p class="text text_type_h4 text_color_grey">Также, мы присутствуем на Яндекс.Картах. Если у вас есть<br>
+                   навигатор, просто напишите в нем:</p></div>
+              <div class="navigator">
+                <span class="text text_type_h4 text_color_green">Охотничья база Белое</span>
+              </div>
+            </div>
+          </div>
+          <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af739cb0af214747dc13344046ac597d79d7ff5e54cadcc306bf13ff720158551&amp;width=480&amp;height=480&amp;lang=ru_RU&amp;scroll=false"></script></div>
       </section>
     </main>
   <script src="./assets/main.js"></script>

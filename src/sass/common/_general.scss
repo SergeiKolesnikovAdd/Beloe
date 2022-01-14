@@ -36,10 +36,12 @@ header {
       }
   
       &_h2 {
+        font-family: Akrobat;
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
-        line-height: 20px;
+        line-height: 100%;
+        text-transform: uppercase;
       }
    
       &_h3 {
@@ -87,6 +89,14 @@ header {
       &_transparent-white {
         color: $transparent-white;
       }
+    }
+
+    &_decoration {
+      
+      &_bold {
+        font-weight: bold;
+      }
+
     }
   }
 
