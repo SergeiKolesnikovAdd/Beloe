@@ -1,57 +1,70 @@
 .advantages {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 18.75vw;
+  overflow: hidden;
+
+  &__inner {
+    position: relative;
+    height: 100%;
+    width: 25%;
+    background: rgba(19, 18, 18, 0.6);
+    z-index: 600;
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    &:hover {
+      .advantages__photo {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__photo {
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 18.75vw;
-}
-
-.first-advantage {
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items:center;
     height: 100%;
-    width: 25%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("/www/media/house.png");
-}
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
 
-.second-advantage {
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items:center;
+    &_1 {
+      background-image: url('/www/media/house.png');
+    }
+
+    &_2 {
+      background-image: url('/www/media/hunters.png');
+    }
+
+    &_3 {
+      background-image: url('/www/media/children.png');
+    }
+
+    &_4 {
+      background-image: url('/www/media/lake.png');
+    }
+  }
+
+  &__text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
     height: 100%;
-    width: 25%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("/www/media/hunters.png");
+    left: 0;
+    top: 0;
+    background-color: rgba(19, 18, 18, 0.6);
+  }
 }
-
-.third-advantage {
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items:center;
-    height: 100%;
-    width: 25%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("/www/media/children.png");
-}
-
-.forth-advantage {
-    display: inline-flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items:center;
-    height: 100%;
-    width: 25%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("/www/media/lake.png");
-}
-
